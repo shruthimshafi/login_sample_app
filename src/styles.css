@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+/*
+/* Created by Filipe Pina
+ * Specific styles of signin, register, component
+ */
+/*
+ * General styles
+ */
+
+ body, html{
+    height: 100%;
+    background-repeat: no-repeat;
+    ;background-image: url('/assets/images/scene.png');
+    /* background-size: 100%; */
+    background-size: cover;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.main{
+    margin-top: 200px;
+}
+
+/* 
+.main-center{
+    margin-top: 100px;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 40px 40px;
+
+} */
+
+#main-area{
+    border:1px solid black;
+    margin-top: 50px;
+    margin: 0 auto;
+    max-width: 550px;
+    /* padding: 40px 40px; */
+    margin-bottom: 100px;
+    height:300px;
+
+}

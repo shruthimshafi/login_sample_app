@@ -1,0 +1,42 @@
+
+<div class="row">
+    <div class="col-md-10">
+        <form [formGroup]="NewRegistrationForm" (ngSubmit)="onSubmit(this.NewRegistrationForm.value)" class="registration-form">
+        <div class="form-group" >
+            <label class="center-block">
+              <input type = "email" class="form-control" formControlName="email" required>
+            </label>
+          </div>
+          <div *ngIf="NewRegistrationForm.controls.email.invalid && (NewRegistrationForm.controls.email.dirty || NewRegistrationForm.controls.email.touched)">
+              <div *ngIf="RegistrationForm.controls.email.errors.required">
+               <p> Email is required.</p>
+              </div>
+              <div *ngIf="NewRegistrationForm.controls.email.errors.pattern">
+                <p>Incorrect Format.</p>
+              </div>
+          </div>
+    
+          <div class="form-group" >
+              <label class="center-block">
+                <input type = "password" class="form-control" formControlName="password" required >
+              </label>
+              </div>
+            
+          <div *ngIf="NewRegistrationForm.controls.password.invalid && (NewRegistrationForm.controls.password.dirty || NewRegistrationForm.controls.password.touched)">
+         <div *ngIf="NewRegistrationForm.controls.password.errors.required">
+          <p> Password is required.</p>
+         </div>
+         <div *ngIf="NewRegistrationForm.controls.passworderrors.minlength">
+           <p>Password must be at least 4 characters long.</p>
+         </div>
+        </div>
+    
+        <div style="margin-bottom: 1em">
+            <button type="submit"
+                    [disabled]="NewRegistrationForm.pristine && NewRegistrationForm.invalid" class="registration-button">Login</button> 
+        </div>
+      </form>
+    </div>
+    </div>
+    
+    

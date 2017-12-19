@@ -1,0 +1,31 @@
+
+.registration-button{
+    color:white;
+    background-color: rgb(28, 154, 228);
+    width:220px;
+    height:40px;
+    border-radius: 5px;
+    padding:0px 0px 0px 0px;
+    margin:15px 0px 0px 0px;
+}
+
+.form-control{
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: darkgray;
+    width:220px;
+ 
+}
+
+.registration-form{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+
+}
+
+.col-md-10{
+    padding:0px 0px 0px 35px;
+    margin:110px 0px 0px 0px;
+    background-color: white;
+}

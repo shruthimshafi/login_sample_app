@@ -2,11 +2,12 @@
 .registration-button{
     color:white;
     background-color: rgb(28, 154, 228);
-    width:220px;
+    width:240px;
     height:40px;
     border-radius: 5px;
     padding:0px 0px 0px 0px;
-    margin:15px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    font-size: 8px;
 }
 
 .form-control{
@@ -14,18 +15,42 @@
     border-right-color: transparent;
     border-left-color: transparent;
     border-bottom-color: darkgray;
-    width:220px;
+    width:200px;
+    height:30px;
+    font-size: 8px;
  
+}
+.input-group-addon{
+    background-color: white;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: darkgray;
+
 }
 
 .registration-form{
     padding:0px 0px 0px 0px;
     margin:0px 0px 0px 0px;
+    /* margin-top:50px; */
 
+}#instruction{
+    color: rgb(211, 209, 209);
+    font-size:10px;
+    padding-left:20px;
 }
-
-.col-md-10{
-    padding:0px 0px 0px 35px;
-    margin:110px 0px 0px 0px;
-    background-color: white;
+#design-cube{
+    margin-top:-10px;
+}
+#area1{
+    padding-left:12px;
+}
+#heading{
+    font-weight:bold;
+}
+#logo{
+    padding-left:1px;
+    width:80px;
+    height:80px;
+    margin-top:10px;
 }

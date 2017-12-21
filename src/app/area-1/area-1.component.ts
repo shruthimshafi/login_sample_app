@@ -14,14 +14,17 @@ export class Area1Component implements OnInit {
   }
   createForm() {
     this.NewRegistrationForm = this.fb.group({
-      email: ['',  Validators.compose([Validators.required, Validators.pattern('[^ @]*@[^ @]*')])],
-      password: ['', Validators.compose([Validators.required])]
+      email: ['',  Validators.compose([Validators.required, Validators.email])],
+      password: ['', Validators.compose([Validators.required, Validators.minLength(4)])]
     });
   }
   onSubmit(NewRegistrationForm) {
     if (this.NewRegistrationForm.valid) {
       console.log('Form Submitted!' );
     }
+  }
+  ngOnInit(){
+
   }
 
 }
